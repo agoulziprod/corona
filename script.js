@@ -1,8 +1,8 @@
 Let images = [{
     name: "Arab",
-    photos: [ "photo.jpg"]
+    photos: [{path:"photo.jpg", alt:''},{path:"photo2.jpg", alt:''}]
 },
-]
+];
 let contributers = [
     {
         name: 'smia o knia',
