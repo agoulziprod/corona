@@ -1,6 +1,9 @@
 body{
     color: $grayColor;
 }
+ul,ol{
+    list-style: none;
+}
 // Start sections
 section{
     padding: 50px 0;
@@ -59,12 +62,24 @@ section.cont{
     font-weight: 300;
     text-align: center;
     &.contributers{
-
+        ul{
+            li{
+                margin: 5px 0;
+            }
+        }
     }
     &.contribute{
-        button.github{
-            color: white;
-            background-color: #24292e;
+        .ui.icons{
+            button{
+                transition: all .5s;
+                &.github{
+                    color: white;
+                    background-color: #24292e;
+                }
+                &:hover{
+                    transform: scale(1.09);
+                }
+            }
         }
     }
 }
