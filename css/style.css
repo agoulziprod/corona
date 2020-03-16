@@ -73,42 +73,47 @@ section.cont {
   font-weight: 300;
   text-align: center;
 }
+/* line 65, ../scss/pages/_homepage.scss */
+section.cont.contribute button.github {
+  color: white;
+  background-color: #24292e;
+}
 
-/* line 76, ../scss/pages/_homepage.scss */
+/* line 79, ../scss/pages/_homepage.scss */
 .svg {
   width: 100px;
   padding: 50px;
 }
 
-/* line 81, ../scss/pages/_homepage.scss */
+/* line 84, ../scss/pages/_homepage.scss */
 .icons a {
   padding-left: 15px;
   font-size: medium;
 }
 
-/* line 87, ../scss/pages/_homepage.scss */
+/* line 90, ../scss/pages/_homepage.scss */
 .image {
   margin: 10px;
 }
 
-/* line 90, ../scss/pages/_homepage.scss */
+/* line 93, ../scss/pages/_homepage.scss */
 .profile {
   border-radius: 50% !important;
 }
 
-/* line 94, ../scss/pages/_homepage.scss */
+/* line 97, ../scss/pages/_homepage.scss */
 .contribute {
   background-color: #131313;
   color: white !important;
 }
 
-/* line 98, ../scss/pages/_homepage.scss */
+/* line 101, ../scss/pages/_homepage.scss */
 .contributers {
   background-color: #2e2e2e;
   color: white;
 }
 
-/* line 102, ../scss/pages/_homepage.scss */
+/* line 105, ../scss/pages/_homepage.scss */
 .white-text {
   color: white !important;
 }
