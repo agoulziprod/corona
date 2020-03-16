@@ -1,72 +1,80 @@
-/*
-Error: Invalid CSS after "...padding: 50px 0": expected "{", was ";"
-        on line 8 of C:/Users/othma/OneDrive/Documents/GitHub/corona/scss/pages/_homepage.scss
-        from line 4 of C:\Users\othma\OneDrive\Documents\GitHub\corona\scss\style.scss
+/* line 2, ../scss/layout/_header.scss */
+header .fixed.menu {
+  border-radius: 0;
+}
 
-3:     color: $grayColor;
-4: }
-5: // Start sections
-6: section{
-7: <<<<<<< HEAD
-8:     padding: 50px 0;
-9: ||||||| merged common ancestor
-10: =======
-11:     
-12: >>>>>>> 64aaed0154f80e9891d31212035541e938396bef
-13:     &:not(:last-of-type){
+/* line 1, ../scss/pages/_homepage.scss */
+body {
+  height: 500vh;
+  color: #777;
+}
 
-Backtrace:
-C:/Users/othma/OneDrive/Documents/GitHub/corona/scss/pages/_homepage.scss:8
-C:\Users\othma\OneDrive\Documents\GitHub\corona\scss\style.scss:4
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1278:in `expected'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1208:in `expected'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1203:in `tok!'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:677:in `block'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:747:in `declaration_or_ruleset'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:697:in `block_child'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:686:in `block_contents'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:678:in `block'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:670:in `ruleset'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:696:in `block_child'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:689:in `block_contents'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:137:in `stylesheet'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:41:in `parse'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:414:in `_to_tree'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:321:in `to_tree'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:327:in `block in visit_import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:88:in `block in with_import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:88:in `with_import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:326:in `visit_import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:161:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:20:in `render'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:290:in `render'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:400:in `run'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
-C:/Program Files (x86)/Koala/bin/sass:22:in `load'
-C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"...padding: 50px 0\": expected \"{\", was \";\"\A         on line 8 of C:/Users/othma/OneDrive/Documents/GitHub/corona/scss/pages/_homepage.scss\A         from line 4 of C:\Users\othma\OneDrive\Documents\GitHub\corona\scss\style.scss\A \A 3:     color: $grayColor;\A 4: }\A 5: // Start sections\A 6: section{\A 7: <<<<<<< HEAD\A 8:     padding: 50px 0;\A 9: ||||||| merged common ancestor\A 10: =======\A 11:     \A 12: >>>>>>> 64aaed0154f80e9891d31212035541e938396bef\A 13:     &:not(:last-of-type){"; }
+/* line 6, ../scss/pages/_homepage.scss */
+section {
+  padding: 50px 0;
+}
+/* line 8, ../scss/pages/_homepage.scss */
+section:not(:last-of-type) {
+  margin-bottom: 40px;
+}
+/* line 11, ../scss/pages/_homepage.scss */
+section:first-of-type {
+  margin-top: 80px;
+}
+/* line 14, ../scss/pages/_homepage.scss */
+section .image-box {
+  width: 50%;
+  margin: auto;
+  position: relative;
+}
+/* line 18, ../scss/pages/_homepage.scss */
+section .image-box img {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+/* line 26, ../scss/pages/_homepage.scss */
+section .image-box .overlay {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+/* line 37, ../scss/pages/_homepage.scss */
+section .image-box:hover .image {
+  opacity: 0.3;
+}
+/* line 40, ../scss/pages/_homepage.scss */
+section .image-box:hover .overlay {
+  opacity: 1;
+}
+
+/* line 54, ../scss/pages/_homepage.scss */
+.svg {
+  width: 100px;
+  padding: 50px;
+}
+
+/* line 59, ../scss/pages/_homepage.scss */
+.icons a {
+  padding-left: 15px;
+  font-size: medium;
+  color: #777;
+}
+
+/* line 64, ../scss/pages/_homepage.scss */
+.icons a:hover {
+  color: #fff;
+}
+
+/* line 68, ../scss/pages/_homepage.scss */
+.image {
+  margin: 10px;
+}
