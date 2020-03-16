@@ -11,33 +11,35 @@ body {
 /* line 4, ../scss/pages/_homepage.scss */
 ul, ol {
   list-style: none;
+  padding: 0;
 }
 
-/* line 8, ../scss/pages/_homepage.scss */
+/* line 9, ../scss/pages/_homepage.scss */
 section {
   padding: 50px 0;
 }
-/* line 10, ../scss/pages/_homepage.scss */
+/* line 11, ../scss/pages/_homepage.scss */
 section:not(:last-of-type) {
   padding-bottom: 40px;
 }
-/* line 13, ../scss/pages/_homepage.scss */
+/* line 14, ../scss/pages/_homepage.scss */
 section:first-of-type {
   margin-top: 80px;
 }
-/* line 16, ../scss/pages/_homepage.scss */
+/* line 17, ../scss/pages/_homepage.scss */
 section .flex {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
-/* line 19, ../scss/pages/_homepage.scss */
+/* line 21, ../scss/pages/_homepage.scss */
 section .flex .image-box {
-  width: 48%;
+  max-width: 500px;
   margin: 0 1%;
   position: relative;
   flex-grow: 1;
 }
-/* line 25, ../scss/pages/_homepage.scss */
+/* line 27, ../scss/pages/_homepage.scss */
 section .flex .image-box img {
   opacity: 1;
   display: block;
@@ -46,7 +48,7 @@ section .flex .image-box img {
   transition: .5s ease;
   backface-visibility: hidden;
 }
-/* line 33, ../scss/pages/_homepage.scss */
+/* line 35, ../scss/pages/_homepage.scss */
 section .flex .image-box .overlay {
   transition: .5s ease;
   opacity: 0;
@@ -57,91 +59,90 @@ section .flex .image-box .overlay {
   -ms-transform: translate(-50%, -50%);
   text-align: center;
 }
-/* line 44, ../scss/pages/_homepage.scss */
+/* line 46, ../scss/pages/_homepage.scss */
 section .flex .image-box:hover .image {
   opacity: 0.3;
 }
-/* line 47, ../scss/pages/_homepage.scss */
+/* line 49, ../scss/pages/_homepage.scss */
 section .flex .image-box:hover .overlay {
   opacity: 1;
 }
 
-/* line 55, ../scss/pages/_homepage.scss */
-.dark-gradient {
-  background: linear-gradient(180deg, white, #1b1c1d);
-  color: white;
+/* line 59, ../scss/pages/_homepage.scss */
+section.source .cards .card {
+  min-width: 260px;
 }
 
-/* line 60, ../scss/pages/_homepage.scss */
+/* line 65, ../scss/pages/_homepage.scss */
 section.cont {
   font-size: 16px;
   font-weight: 300;
   text-align: center;
 }
-/* line 66, ../scss/pages/_homepage.scss */
+/* line 71, ../scss/pages/_homepage.scss */
 section.cont.contributers ul li {
   margin: 5px 0;
 }
-/* line 73, ../scss/pages/_homepage.scss */
+/* line 78, ../scss/pages/_homepage.scss */
 section.cont.contribute .ui.icons button {
   transition: all .5s;
 }
-/* line 75, ../scss/pages/_homepage.scss */
+/* line 80, ../scss/pages/_homepage.scss */
 section.cont.contribute .ui.icons button.github {
   color: white;
   background-color: #24292e;
 }
-/* line 79, ../scss/pages/_homepage.scss */
+/* line 84, ../scss/pages/_homepage.scss */
 section.cont.contribute .ui.icons button:hover {
   transform: scale(1.09);
 }
 
-/* line 94, ../scss/pages/_homepage.scss */
+/* line 99, ../scss/pages/_homepage.scss */
 .svg {
   width: 100px;
   padding: 50px;
 }
 
-/* line 99, ../scss/pages/_homepage.scss */
+/* line 104, ../scss/pages/_homepage.scss */
 .icons a {
   padding-left: 15px;
   font-size: medium;
 }
 
-/* line 105, ../scss/pages/_homepage.scss */
+/* line 110, ../scss/pages/_homepage.scss */
 .image {
   margin: 10px;
 }
 
-/* line 108, ../scss/pages/_homepage.scss */
+/* line 113, ../scss/pages/_homepage.scss */
 .profile {
   border-radius: 50% !important;
 }
 
-/* line 112, ../scss/pages/_homepage.scss */
+/* line 118, ../scss/pages/_homepage.scss */
 .contribute {
   background-color: #131313;
   color: white !important;
 }
 
-/* line 116, ../scss/pages/_homepage.scss */
+/* line 122, ../scss/pages/_homepage.scss */
 .contributers {
   background-color: #2e2e2e;
   color: white;
 }
 
-/* line 120, ../scss/pages/_homepage.scss */
+/* line 126, ../scss/pages/_homepage.scss */
 .white-text {
   color: white !important;
 }
 
-
+/* line 129, ../scss/pages/_homepage.scss */
 .about {
   background-color: #ffd29e;
 }
 
+/* line 132, ../scss/pages/_homepage.scss */
 .source {
   background-color: #dadada;
   color: white;
 }
-/*# sourceMappingURL=style.css.map */

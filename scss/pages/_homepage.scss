@@ -3,6 +3,7 @@ body{
 }
 ul,ol{
     list-style: none;
+    padding: 0;
 }
 // Start sections
 section{
@@ -16,9 +17,10 @@ section{
     .flex{
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
         .image-box{
             // max-width: 500px;
-            width: 48%;
+            max-width: 500px;
             margin: 0 1%;
             position: relative;
             flex-grow: 1;
@@ -52,9 +54,12 @@ section{
     }
 }
 
-.dark-gradient{
-    background: linear-gradient(180deg, white, #1b1c1d);
-    color: white;
+section.source{
+    .cards{
+        .card{
+            min-width: 260px;
+        }
+    }
 }
 
 section.cont{
