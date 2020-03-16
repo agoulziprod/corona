@@ -1,7 +1,7 @@
 let images = [
     {
-    name: "darija",
-    symbole: "Da",
+    name: "العربية",
+    symbole: "Ar",
     photos: [
         { path: "darija1.png", alt: '7it kanbghitk, maghansalamch 3lik' },
         { path: "darija2.png", alt: 'حيت كنبغيك مغنسلمش عليك ' }
