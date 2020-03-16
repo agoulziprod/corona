@@ -50,10 +50,6 @@ for (const iterator of images) {
     // onclick="window.open('${photo.path}')
 }
 
-for (const lg of images) {
-   
-   
-}
 
 let contributers = [
     {
@@ -76,8 +72,12 @@ let contributers = [
         name: 'OUREKOUCH Mounir',
         Link: ''
     },
-
+    
 ]
+        for (const c of contributers) {
+           
+        // contributers-list
+        }
 
 
 

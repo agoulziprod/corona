@@ -20,8 +20,6 @@ $(document).ready(function () {
         $("#lg").append(`<a class="item" data-scroll="${e.symbole}">${e.name}</a>`)
         // href="#${e.symbole}"
     })
-    // contributers hover effect
-  
     
     // auto Sync of active class in navbar
     $(window).scroll(function () {

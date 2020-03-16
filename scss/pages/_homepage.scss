@@ -5,7 +5,7 @@ body{
 section{
     padding: 50px 0;
     &:not(:last-of-type){
-        margin-bottom: 40px;
+        padding-bottom: 40px;
     }
     &:first-of-type{
         margin-top: 80px;
@@ -69,13 +69,8 @@ section{
     .icons a {
         padding-left: 15px;
         font-size: medium;
-        color: #777;
     }
 
-    .icons a:hover {
-
-        color: #fff;
-    }
 
     .image {
         margin: 10px;
@@ -85,5 +80,13 @@ section{
     }
 
     .contribute{
-        background-color: grey;
+        background-color: rgb(19, 19, 19);
+        color: white !important;
     }
+    .contributers{
+        background-color: rgb(46, 46, 46);
+        color: white;
+    }
+    .white-text{
+        color: white !important;
+      }

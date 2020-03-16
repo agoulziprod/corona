@@ -11,7 +11,7 @@ section {
 }
 
 section:not(:last-of-type) {
-  margin-bottom: 40px;
+  padding-bottom: 40px;
 }
 
 section:first-of-type {
@@ -81,11 +81,6 @@ section .flex .image-box:hover .overlay {
 .icons a {
   padding-left: 15px;
   font-size: medium;
-  color: #777;
-}
-
-.icons a:hover {
-  color: #fff;
 }
 
 .image {
@@ -97,6 +92,16 @@ section .flex .image-box:hover .overlay {
 }
 
 .contribute {
-  background-color: grey;
+  background-color: #131313;
+  color: white !important;
+}
+
+.contributers {
+  background-color: #2e2e2e;
+  color: white;
+}
+
+.white-text {
+  color: white !important;
 }
 /*# sourceMappingURL=style.css.map */
