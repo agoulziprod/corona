@@ -8,4 +8,9 @@ $(document).ready(function () {
             scrollTop: $("#" + $(this).data('scroll')).offset().top - $('header .menu.fixed').innerHeight()
         }, 2000);
     });
+
+    // appending images object
+    images.map(e => {
+        $("section.last-sec").before(e.template);
+    })
 });

@@ -6,28 +6,7 @@ let images = [
         [
             { path: "darija1.png", alt: '7it kanbghitk, maghansalamch 3lik' },
             { path: "darija2.png", alt: 'حيت كنبغيك مغنسلمش عليك ' }
-        ],
-    template:`<section class="ui section" id="${this.symbole}">
-                <div class="ui container">
-                    <h3 class="ui header centered">${this.name}</h3>
-                    <div class="image-box">
-                        <img class="ui image rounded" src="${this.photos[0].path}" alt="${this.photos[0].alt}">
-                        <div class="overlay">
-                            <button class="ui huge primary button">
-                                Download image
-                            </button>
-                        </div>
-                    </div>
-                    <div class="image-box">
-                        <img class="ui image rounded" src="${this.photos[1].path}" alt="${this.photos[1].alt}">
-                        <div class="overlay">
-                            <button class="ui huge primary button">
-                                Download image
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </section>`
+        ]
 },
     {
     name: "English",
@@ -52,7 +31,8 @@ let images = [
 for (const iterator of images) {
     iterator.template = `<section class="ui section" id="${iterator.symbole}">
                             <div class="ui container">
-                                <h3 class="ui header centered">${iterator.name}</h3>`
+                                <h3 class="ui header centered">${iterator.name}</h3>
+                        `
     let content = ""
     for (const photo of iterator.photos) {
         content += `<div class="image-box">
@@ -64,8 +44,7 @@ for (const iterator of images) {
                         </div>
                     </div>`
     }
-    iterator.template += content + `</div>
-                                </section>`
+    iterator.template += content + `</div></section>`
     console.log(iterator.template)
 }
 

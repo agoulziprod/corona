@@ -57,10 +57,3 @@ section .image-box:hover .image {
 section .image-box:hover .overlay {
   opacity: 1;
 }
-
-
-
-.svg{
-  width: 100px;
-  padding: 50px;
-}
