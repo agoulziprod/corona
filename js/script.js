@@ -59,10 +59,13 @@ let contributers = [
     {
         name: 'OTHWSAVE',
         Link: 'https://www.linkedin.com/in/othwsav'
+    }, {
+        name: 'AGOULZI Salah',
+        Link: ''
     },
     {
         name: 'KHIZOU Hajar',
-        Link: ''
+        Link: 'www.linkedin.com/in/hajarkhizou'
     },
     {
         name: 'AIT OUFKIR Chaimae',
@@ -74,10 +77,7 @@ let contributers = [
     },
     
 ]
-        for (const c of contributers) {
-         
-        }
-
+       
 
 
 
