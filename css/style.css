@@ -11,35 +11,49 @@ body {
 
 /* line 6, ../scss/pages/_homepage.scss */
 section {
-  height: 600px;
+  height: 700px;
+  max-height: 100vh;
 }
-/* line 8, ../scss/pages/_homepage.scss */
+/* line 9, ../scss/pages/_homepage.scss */
 section:not(:last-of-type) {
   margin-bottom: 40px;
   border-bottom: 2px solid #777;
 }
-/* line 12, ../scss/pages/_homepage.scss */
+/* line 13, ../scss/pages/_homepage.scss */
 section:first-of-type {
   margin-top: 80px;
 }
-/* line 15, ../scss/pages/_homepage.scss */
-section .overlay {
+/* line 16, ../scss/pages/_homepage.scss */
+section .image-box {
+  width: 50%;
+  margin: auto;
   position: relative;
 }
-/* line 17, ../scss/pages/_homepage.scss */
-section .overlay::after {
-  content: "Download It Now";
-  width: 50%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  display: flex;
+/* line 20, ../scss/pages/_homepage.scss */
+section .image-box img {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+/* line 28, ../scss/pages/_homepage.scss */
+section .image-box .overlay {
+  transition: .5s ease;
+  opacity: 0;
   position: absolute;
-  top: 0;
-  left: -25%;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-size: 40px;
-  font-weight: 900;
-  display: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+/* line 39, ../scss/pages/_homepage.scss */
+section .image-box:hover .image {
+  opacity: 0.3;
+}
+/* line 42, ../scss/pages/_homepage.scss */
+section .image-box:hover .overlay {
+  opacity: 1;
 }

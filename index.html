@@ -13,50 +13,79 @@
     <header>
         <div class="ui huge fixed menu">
             <div class="ui container">
-                <div class="ui dropdown scrollToImages item">
+                <div class="ui active dropdown scrollToImages item">
                     Images <i class="dropdown icon"></i>
                     <div class="menu">
                         <a class="item" data-scroll="ar">Arabe</a>
                         <a class="item" data-scroll="fr">Français</a>
                     </div>
                 </div>
-                <a class="active item">
-                    Home
+                <div class="ui dropdown item">
+                    Source <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <a class="item">
+                            <i class="file pdf icon"></i>
+                            PDF
+                        </a>
+                        <a class="item">
+                            <i class="file pdf icon"></i>
+                            AI
+                        </a>
+                    </div>
+                </div>
+                <a class="item">
+                    A propos
                 </a>
                 <a class="item">
-                    Messages
+                    Contributers
                 </a>
                 <div class="right menu">
-                    <div class="ui dropdown item">
+                    <!-- <div class="ui dropdown item">
                         Language <i class="dropdown icon"></i>
                         <div class="menu">
                             <a class="item">English</a>
                             <a class="item">Russian</a>
                             <a class="item">Spanish</a>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="item">
-                        <div class="ui primary button">Sign Up</div>
+                        <div class="ui brown button">
+                            <i class="coffee icon"></i>
+                            Buy me a Cofee
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </header>
     <!-- End Header -->
-
+    <!-- Start Sections -->
+    <!-- section ar -->
     <section class="ui section" id="ar">
         <div class="ui container">
             <h1 class="ui header centered">Arabe</h1>
-            <!-- <div class="overlay">
-                <img class="ui image centered rounded large" src="http://placehold.it/1000x1000/777" alt="">
-            </div> -->
-            <img class="ui image centered rounded large" src="http://placehold.it/1000x1000/777" alt="">
+            <div class="image-box">
+                <img class="ui image rounded" src="http://placehold.it/1000x1000/777" alt="">
+                <div class="overlay">
+                    <button class="ui huge primary button">
+                        Download it Now
+                    </button>
+                </div>
+            </div>
         </div>
     </section>
+    <!-- section fr -->
     <section class="ui section" id="fr">
         <div class="ui container">
             <h1 class="ui header centered">Français</h1>
-                <img class="ui image centered rounded large" src="http://placehold.it/1000x1000/777" alt="">
+            <div class="image-box">
+                <img class="ui image rounded" src="http://placehold.it/1000x1000/777" alt="">
+                <div class="overlay">
+                    <button class="ui huge primary button">
+                        Download it Now
+                    </button>
+                </div>
+            </div>
         </div>
     </section>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
