@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <!-- Start Header -->
     <header>
@@ -16,20 +18,20 @@
                 <div class="ui dropdown scrollToImages item">
                     Images <i class="dropdown icon"></i>
                     <div class="menu" id="lg">
-                        
+
                     </div>
                 </div>
-                <div class="ui dropdown item">
+                <a class="item link-to-go" data-scroll="source">
                     Source (PDF & AI)
-                </div>
-                <a class="item">
+                </a>
+                <a class="item link-to-go" data-scroll="about">
                     A propos
                 </a>
-                <a class="item">
+                <a class="item link-to-go" data-scroll="contrib">
                     Contributers
                 </a>
                 <div class="right menu">
-    
+
                     <div class="item">
                         <div class="ui brown button">
                             <i class="coffee icon"></i>
@@ -57,72 +59,78 @@
             </div>
         </div>
     </section> -->
+    <div class="dark-gradient">
+        <section id="source" class="last-sec darker">
+            <div class="ui container">
 
-    <section class="last-sec">
-        <div class="ui container">
-            
-            <h2 class="ui header centered">Source (PDF & AI)</h2>
-            <div class="ui cards four centered">
+                <h2 class="ui header centered">Source (PDF & AI)</h2>
+                <div class="ui cards four centered">
 
-                <div class="ui card">
-                    <a class="image" href="#">
-                        <img class="svg" src="/Static/icons/pdf.svg">
-                    </a>
-                    <div class="content">
-                        <a class="header">.PDF</a>
-                        <div class="meta">
-                            <a>Printable and editable file</a>
+                    <div class="ui card">
+                        <a class="image" href="#">
+                            <img class="svg" src="/Static/icons/pdf.svg">
+                        </a>
+                        <div class="content">
+                            <a class="header">.PDF</a>
+                            <div class="meta">
+                                <a>Printable and editable file</a>
+                            </div>
+
                         </div>
-                        
                     </div>
-                </div>
-                <div class="ui card">
-                    <a class="image" href="#">
-                        <img class="svg" src="/Static/icons/illustrator.svg">
-                    </a>
-                    <div class="content">
-                        <a class="header">.AI</a>
-                        <div class="meta">
-                            <a>Printable and editable file</a>
+                    <div class="ui card">
+                        <a class="image" href="#">
+                            <img class="svg" src="/Static/icons/illustrator.svg">
+                        </a>
+                        <div class="content">
+                            <a class="header">.AI</a>
+                            <div class="meta">
+                                <a>Printable and editable file</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    
-    <section >
+        </section>
+
+        <section id="about" class="darker">
             <div class="container ui">
-                <h2 class="ui header centered">About</h2>
+                <h2 class="ui header centered">A propos</h2>
                 <div class="ui items">
                     <div class="item">
                         <div class="image">
                             <img src="./Static/300-blue.jpg">
                         </div>
                         <div class="content">
-                            <a class="header">Header</a>
+                            <a class="header">About me</a>
                             <div class="meta">
                                 <span>Description</span>
                             </div>
                             <div class="description">
-                                <p>Hi! <br> ana Mohamed, lfikra jatni mni kantlaqa m3a nass, o wakha kankoun 3aref anaho makhassekch tsellem, kankoun ana lawal li mad yeddi, 7it ma3rftch kifach nchre7, ms hada solok kberna biih! s3iib nbdlouh ! o hta ila bghina nbdlouh khass ykon 1 sabab qwii!
-                                    o 7na ka magahriba ! kn3tabro tslima b7al katbayan anak kat7eb chakhess li m3ak, donc khass nbadlo had lmafhoom dial anak wakha matsalamch hada ki3ni anak u still like him/her ! o salaam
-                                    o glt 3lach mandirch had les stickers o npartajihom m3a nass! bach kolchi yqder y imprimihom, ylasqohom f Pc, 7ayet, ey haja!
+                                <p>Hi! <br> ana Mohamed, lfikra jatni mni kantlaqa m3a nass, o wakha kankoun 3aref anaho
+                                    makhassekch tsellem, kankoun ana lawal li mad yeddi, 7it ma3rftch kifach nchre7, ms
+                                    hada solok kberna biih! s3iib nbdlouh ! o hta ila bghina nbdlouh khass ykon 1 sabab
+                                    qwii!
+                                    o 7na ka magahriba ! kn3tabro tslima b7al katbayan anak kat7eb chakhess li m3ak,
+                                    donc khass nbadlo had lmafhoom dial anak wakha matsalamch hada ki3ni anak u still
+                                    like him/her ! o salaam
+                                    o glt 3lach mandirch had les stickers o npartajihom m3a nass! bach kolchi yqder y
+                                    imprimihom, ylasqohom f Pc, 7ayet, ey haja!
                                     Comme ça, 7na kamline ghankono bdlna mn tariqat nadar dialna l omor,
                                     o salaaaaam!</p>
                             </div>
-                            <div class="extra">
+                            <!-- <div class="extra">
                                 Additional Details
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
     </section>
-    <section>
+    <!-- darker sections-->
+    <section id="contrib" class="darker">
         <div class="ui container">
-            
+
             <h2 class="ui header centered">Contributers</h2>
             <p>
                 This is the list of people that helped me to create this content, so many thanks to you guys:
@@ -133,7 +141,7 @@
                         <div class="ui dimmer">
                             <div class="content">
                                 <div class="center">
-                                    <div class="ui inverted button">Add Friend</div>
+                                    <div class="ui inverted button">Hire</div>
                                 </div>
                             </div>
                         </div>
@@ -141,55 +149,61 @@
                     </div>
                     <div class="content">
                         <a class="header">Mohammed Agoulzi</a>
-                        <div class="meta">
+                        <!-- <div class="meta">
                             <span class="date">Created in Sep 2014</span>
-                        </div>
+                        </div> -->
                     </div>
-                    <div class="extra content">
+                    <!-- <div class="extra content">
                         <a>
                             <i class="users icon"></i>
                             2 Members
                         </a>
-                    </div>
+                    </div> -->
                 </div>
+
                 <div class="card">
                     <div class="blurring dimmable image">
-                        <div class="ui inverted dimmer">
+                        <div class="ui dimmer">
                             <div class="content">
                                 <div class="center">
-                                    <div class="ui primary button">Add Friend</div>
+                                    <div class="ui inverted button">Hire</div>
                                 </div>
                             </div>
                         </div>
-                        <img src="/images/avatar/large/jenny.jpg">
+                        <img src="./Static/othwsav.svg">
                     </div>
                     <div class="content">
-                        <a class="header">Team Hess</a>
-                        <div class="meta">
-                            <span class="date">Created in Aug 2014</span>
-                        </div>
+                        <a class="header">OTHWSAV</a>
                     </div>
-                    <div class="extra content">
-                        <a>
-                            <i class="users icon"></i>
-                            2 Members
-                        </a>
+                </div>
+
+                <div class="card">
+                    <div class="blurring dimmable image">
+                        <div class="ui dimmer">
+                            <div class="content">
+                                <div class="center">
+                                    <div class="ui inverted button">Hire</div>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="./Static/300-blue.jpg">
+                    </div>
+                    <div class="content">
+                        <a class="header">Mohammed Agoulzi</a>
                     </div>
                 </div>
             </div>
-            <div class="ui ">
-            </div>
         </div>
     </section>
-    <section>
+    <section class="darker">
         <div class="ui container inverted white">
-            
+
             <h2 class="ui header centered">Contribute</h2>
             <div class="ui ">
                 <h5 class="icons">
                     You can help by making designs, translating content,
-                    Feel free to contact me: 
-                    
+                    Feel free to contact me:
+
                     <a href="https://www.instagram.com/agoulziprod/" target="_blank">
                         <i class="instagram icon"></i>
                     </a>
@@ -205,16 +219,50 @@
                     <a target="_blank" href="http://github.com/agoulziprod">
                         <i class="github icon"></i>
                     </a>
-                    <br> 
+                    <br>
 
                 </h5>
-               
             </div>
         </div>
     </section>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    </div>
+    <!-- End darker sections-->
+    <footer>
+        <div class="ui inverted vertical footer segment">
+            <div class="ui container">
+                <div class="ui stackable inverted divided equal height stackable grid">
+                    <div class="three wide column">
+                        <h4 class="ui inverted header">About</h4>
+                        <div class="ui inverted link list">
+                            <a href="#" class="item">Sitemap</a>
+                            <a href="#" class="item">Contact Us</a>
+                            <a href="#" class="item">Religious Ceremonies</a>
+                            <a href="#" class="item">Gazebo Plans</a>
+                        </div>
+                    </div>
+                    <div class="three wide column">
+                        <h4 class="ui inverted header">Services</h4>
+                        <div class="ui inverted link list">
+                            <a href="#" class="item">Banana Pre-Order</a>
+                            <a href="#" class="item">DNA FAQ</a>
+                            <a href="#" class="item">How To Access</a>
+                            <a href="#" class="item">Favorite X-Men</a>
+                        </div>
+                    </div>
+                    <div class="seven wide column">
+                        <h4 class="ui inverted header">Footer Header</h4>
+                        <p>Extra space for a call to action inside the footer that could help re-engage users.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
     <script src="js/script.js"></script>
     <script src="js/jquery.js"></script>
 </body>
+
 </html>

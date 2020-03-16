@@ -22,13 +22,19 @@ section:first-of-type {
   margin-top: 80px;
 }
 /* line 14, ../scss/pages/_homepage.scss */
-section .image-box {
-  width: 50%;
-  margin: auto;
-  position: relative;
+section .flex {
+  display: flex;
+  flex-wrap: wrap;
 }
-/* line 18, ../scss/pages/_homepage.scss */
-section .image-box img {
+/* line 17, ../scss/pages/_homepage.scss */
+section .flex .image-box {
+  width: 48%;
+  margin: 0 1%;
+  position: relative;
+  flex-grow: 1;
+}
+/* line 23, ../scss/pages/_homepage.scss */
+section .flex .image-box img {
   opacity: 1;
   display: block;
   width: 100%;
@@ -36,8 +42,8 @@ section .image-box img {
   transition: .5s ease;
   backface-visibility: hidden;
 }
-/* line 26, ../scss/pages/_homepage.scss */
-section .image-box .overlay {
+/* line 31, ../scss/pages/_homepage.scss */
+section .flex .image-box .overlay {
   transition: .5s ease;
   opacity: 0;
   position: absolute;
@@ -47,34 +53,40 @@ section .image-box .overlay {
   -ms-transform: translate(-50%, -50%);
   text-align: center;
 }
-/* line 37, ../scss/pages/_homepage.scss */
-section .image-box:hover .image {
+/* line 42, ../scss/pages/_homepage.scss */
+section .flex .image-box:hover .image {
   opacity: 0.3;
 }
-/* line 40, ../scss/pages/_homepage.scss */
-section .image-box:hover .overlay {
+/* line 45, ../scss/pages/_homepage.scss */
+section .flex .image-box:hover .overlay {
   opacity: 1;
 }
 
-/* line 54, ../scss/pages/_homepage.scss */
+/* line 53, ../scss/pages/_homepage.scss */
+.dark-gradient {
+  background: linear-gradient(180deg, white, #1b1c1d);
+  color: white;
+}
+
+/* line 65, ../scss/pages/_homepage.scss */
 .svg {
   width: 100px;
   padding: 50px;
 }
 
-/* line 59, ../scss/pages/_homepage.scss */
+/* line 70, ../scss/pages/_homepage.scss */
 .icons a {
   padding-left: 15px;
   font-size: medium;
   color: #777;
 }
 
-/* line 64, ../scss/pages/_homepage.scss */
+/* line 76, ../scss/pages/_homepage.scss */
 .icons a:hover {
   color: #fff;
 }
 
-/* line 68, ../scss/pages/_homepage.scss */
+/* line 81, ../scss/pages/_homepage.scss */
 .image {
   margin: 10px;
 }

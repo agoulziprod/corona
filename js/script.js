@@ -23,7 +23,7 @@ let images = [
             [
                 { path: "chelha1.png", alt: 'اديغ شيريغ اورنيغ ادغيفش سلمغ' },
                 { path: "chelha5.png", alt: 'ⵉⴷⵖ ⵖⵉⴼⵉ ⵜⵄⵥⵥⴰⴷ ⵡⵔ ⵏⵏⵉⵖ ⴰⴷⵖⵉⴼⵛ ⵙⵍⵎⵖ' },
-                { path: "chelha3.png", alt: 'Idgh kirigh, Ornigh aghifk sallamagh' },
+                { path: "chalha3.png", alt: 'Idgh kirigh, Ornigh aghifk sallamagh' },
                 { path: "chelha4.png", alt: 'Mizi tekhseghchek, oukhak tssedjimegh chi' }
             ]
 },
@@ -33,6 +33,7 @@ for (const iterator of images) {
     iterator.template = `<section class="ui section" id="${iterator.symbole}">
                             <div class="ui container">
                                 <h3 class="ui header centered">${iterator.name}</h3>
+                                <div class="flex">
                         `
     let content = ""
     for (const photo of iterator.photos) {
@@ -40,13 +41,13 @@ for (const iterator of images) {
                         <img class="ui image rounded" src="/images/${photo.path}" alt="${photo.alt}">
                         <div class="overlay">
                             <button class="ui huge primary button">
-                                Download image
+                                Download Now!
                             </button>
                         </div>
                     </div>`
     }
-    iterator.template += content + `</div></section>`
-   
+    iterator.template += content + `</div></div></section>`
+    // onclick="window.open('${photo.path}')
 }
 
 for (const lg of images) {
