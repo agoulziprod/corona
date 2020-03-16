@@ -25,6 +25,10 @@ let images = [
                 { path: "chelha5.png", alt: 'ⵉⴷⵖ ⵖⵉⴼⵉ ⵜⵄⵥⵥⴰⴷ ⵡⵔ ⵏⵏⵉⵖ ⴰⴷⵖⵉⴼⵛ ⵙⵍⵎⵖ' },
                 { path: "chalha3.png", alt: 'Idgh kirigh, Ornigh aghifk sallamagh' },
                 { path: "chelha4.png", alt: 'Mizi tekhseghchek, oukhak tssedjimegh chi' }
+                ,
+                { path: "chelha7.png", alt: 'achko  arkitirikh, orra fllak sallemkh' }
+                ,
+                { path: "chelha9.png", alt: 'اشكو ارْكٍتريخ اورافلاك سلمخ' }
             ]
 },
 ];
