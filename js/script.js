@@ -66,7 +66,7 @@ $(document).ready(function () {
     $("header .menu.fixed .scrollToImages .menu a").click(function (event) {
         event.preventDefault();
         $('html').animate({
-            scrollTop: $("#" + $(this).data('scroll')).offset().top - $('header').innerHeight()
+            scrollTop: $("#" + $(this).data('scroll')).offset().top - $('header .menu.fixed').innerHeight()
         }, 2000);
     });
 });
