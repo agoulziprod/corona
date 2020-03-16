@@ -2,11 +2,32 @@ let images = [
     {
     name: "العربية",
     symbole: "Ar",
-    photos: [
-        { path: "darija1.png", alt: '7it kanbghitk, maghansalamch 3lik' },
-        { path: "darija2.png", alt: 'حيت كنبغيك مغنسلمش عليك ' }
-        
-    ]
+    photos: 
+        [
+            { path: "darija1.png", alt: '7it kanbghitk, maghansalamch 3lik' },
+            { path: "darija2.png", alt: 'حيت كنبغيك مغنسلمش عليك ' }
+        ],
+    template:`<section class="ui section" id="${this.symbole}">
+                <div class="ui container">
+                    <h3 class="ui header centered">${this.name}</h3>
+                    <div class="image-box">
+                        <img class="ui image rounded" src="${this.photos[0].path}" alt="${this.photos[0].alt}">
+                        <div class="overlay">
+                            <button class="ui huge primary button">
+                                Download image
+                            </button>
+                        </div>
+                    </div>
+                    <div class="image-box">
+                        <img class="ui image rounded" src="${this.photos[1].path}" alt="${this.photos[1].alt}">
+                        <div class="overlay">
+                            <button class="ui huge primary button">
+                                Download image
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>`
 },
     {
     name: "English",
@@ -19,18 +40,34 @@ let images = [
     {
         name: "Tamazight",
         symbole: "Ta",
-        photos: [
-            {
-                path: "chelha1.png", alt: 'اديغ شيريغ اورنيغ ادغيفش سلمغ' },
-        { path: "chelha5.png", alt: 'ⵉⴷⵖ ⵖⵉⴼⵉ ⵜⵄⵥⵥⴰⴷ ⵡⵔ ⵏⵏⵉⵖ ⴰⴷⵖⵉⴼⵛ ⵙⵍⵎⵖ' },
-        { path: "chelha3.png", alt: 'Idgh kirigh, Ornigh aghifk sallamagh' },
-            { path: "chelha4.png", alt: 'Mizi tekhseghchek, oukhak tssedjimegh chi' }
-    
-        
-    ]
+        photos: 
+            [
+                { path: "chelha1.png", alt: 'اديغ شيريغ اورنيغ ادغيفش سلمغ' },
+                { path: "chelha5.png", alt: 'ⵉⴷⵖ ⵖⵉⴼⵉ ⵜⵄⵥⵥⴰⴷ ⵡⵔ ⵏⵏⵉⵖ ⴰⴷⵖⵉⴼⵛ ⵙⵍⵎⵖ' },
+                { path: "chelha3.png", alt: 'Idgh kirigh, Ornigh aghifk sallamagh' },
+                { path: "chelha4.png", alt: 'Mizi tekhseghchek, oukhak tssedjimegh chi' }
+            ]
 },
 ];
-
+for (const iterator of images) {
+    iterator.template = `<section class="ui section" id="${iterator.symbole}">
+                            <div class="ui container">
+                                <h3 class="ui header centered">${iterator.name}</h3>`
+    let content = ""
+    for (const photo of iterator.photos) {
+        content += `<div class="image-box">
+                        <img class="ui image rounded" src="${photo.path}" alt="${photo.alt}">
+                        <div class="overlay">
+                            <button class="ui huge primary button">
+                                Download image
+                            </button>
+                        </div>
+                    </div>`
+    }
+    iterator.template += content + `</div>
+                                </section>`
+    console.log(iterator.template)
+}
 
 let contributers = [
     {
@@ -58,15 +95,4 @@ let contributers = [
 
 
 
-$('.ui.dropdown')
-    .dropdown()
-    ;
 
-$(document).ready(function () {
-    $("header .menu.fixed .scrollToImages .menu a").click(function (event) {
-        event.preventDefault();
-        $('html').animate({
-            scrollTop: $("#" + $(this).data('scroll')).offset().top - $('header .menu.fixed').innerHeight()
-        }, 2000);
-    });
-});
