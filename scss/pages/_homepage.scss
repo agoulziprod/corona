@@ -53,6 +53,18 @@ section{
     background: linear-gradient(180deg, white, #1b1c1d);
     color: white;
 }
+
+section.cont{
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    &.contributers{
+
+    }
+    &.contribute{
+        
+    }
+}
 // End sections
 
 
