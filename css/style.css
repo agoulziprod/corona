@@ -1,0 +1,45 @@
+/* line 2, ../scss/layout/_header.scss */
+header .fixed.menu {
+  border-radius: 0;
+}
+
+/* line 1, ../scss/pages/_homepage.scss */
+body {
+  height: 500vh;
+  color: #777;
+}
+
+/* line 6, ../scss/pages/_homepage.scss */
+section {
+  height: 600px;
+}
+/* line 8, ../scss/pages/_homepage.scss */
+section:not(:last-of-type) {
+  margin-bottom: 40px;
+  border-bottom: 2px solid #777;
+}
+/* line 12, ../scss/pages/_homepage.scss */
+section:first-of-type {
+  margin-top: 80px;
+}
+/* line 15, ../scss/pages/_homepage.scss */
+section .overlay {
+  position: relative;
+}
+/* line 17, ../scss/pages/_homepage.scss */
+section .overlay::after {
+  content: "Download It Now";
+  width: 50%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: -25%;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 40px;
+  font-weight: 900;
+  display: none;
+}
