@@ -64,3 +64,13 @@ section .image-box:hover .overlay {
   width: 100px;
   padding: 50px;
 }
+
+.icons a{
+  padding-left: 15px;
+  font-size: medium;
+  color: #777;
+}
+.icons a:hover{
+ 
+  color: #fff;
+}
