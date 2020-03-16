@@ -1,6 +1,9 @@
 body{
     color: $grayColor;
 }
+ul,ol{
+    list-style: none;
+}
 // Start sections
 section{
     padding: 50px 0;
@@ -52,6 +55,33 @@ section{
 .dark-gradient{
     background: linear-gradient(180deg, white, #1b1c1d);
     color: white;
+}
+
+section.cont{
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    &.contributers{
+        ul{
+            li{
+                margin: 5px 0;
+            }
+        }
+    }
+    &.contribute{
+        .ui.icons{
+            button{
+                transition: all .5s;
+                &.github{
+                    color: white;
+                    background-color: #24292e;
+                }
+                &:hover{
+                    transform: scale(1.09);
+                }
+            }
+        }
+    }
 }
 // End sections
 
