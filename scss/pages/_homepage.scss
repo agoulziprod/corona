@@ -1,0 +1,43 @@
+body{
+    height: 500vh;
+    color: $grayColor;
+}
+// Start sections
+section{
+    height: 600px;
+    &:not(:last-of-type){
+        margin-bottom: 40px;
+        border-bottom: 2px solid $grayColor;
+    }
+    &:first-of-type{
+        margin-top: 80px;
+    }
+    .overlay{
+        position: relative;
+        &::after{
+            content: "Download It Now";
+            width: 50%;
+            height: 100%;
+            background-color: rgba($color: black, $alpha: 0.5);
+            display: flex;
+            position: absolute;
+            top: 0;
+            left: -25%;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font:{
+                size: 40px;
+                weight: 900;
+            }
+            display: none;
+        }
+    }
+    // a{
+    //     width: 100%;
+        // .overlay{
+        //     width: 100%;
+        // }
+    // }
+}
+// End sections

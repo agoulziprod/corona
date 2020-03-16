@@ -5,9 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Corona</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    test
-    
+    <!-- Start Header -->
+    <header>
+        <div class="ui huge fixed menu">
+            <div class="ui container">
+                <div class="ui dropdown scrollToImages item">
+                    Images <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <a class="item" data-scroll="ar">Arabe</a>
+                        <a class="item" data-scroll="fr">Français</a>
+                    </div>
+                </div>
+                <a class="active item">
+                    Home
+                </a>
+                <a class="item">
+                    Messages
+                </a>
+                <div class="right menu">
+                    <div class="ui dropdown item">
+                        Language <i class="dropdown icon"></i>
+                        <div class="menu">
+                            <a class="item">English</a>
+                            <a class="item">Russian</a>
+                            <a class="item">Spanish</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="ui primary button">Sign Up</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <section class="ui section" id="ar">
+        <div class="ui container">
+            <h1 class="ui header centered">Arabe</h1>
+            <!-- <div class="overlay">
+                <img class="ui image centered rounded large" src="http://placehold.it/1000x1000/777" alt="">
+            </div> -->
+            <img class="ui image centered rounded large" src="http://placehold.it/1000x1000/777" alt="">
+        </div>
+    </section>
+    <section class="ui section" id="fr">
+        <div class="ui container">
+            <h1 class="ui header centered">Français</h1>
+                <img class="ui image centered rounded large" src="http://placehold.it/1000x1000/777" alt="">
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
