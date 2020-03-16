@@ -4,11 +4,9 @@ body{
 }
 // Start sections
 section{
-    height: 700px;
-    max-height: 100vh;
+    padding: 50px 0;
     &:not(:last-of-type){
         margin-bottom: 40px;
-        border-bottom: 2px solid $grayColor;
     }
     &:first-of-type{
         margin-top: 80px;

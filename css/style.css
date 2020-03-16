@@ -11,25 +11,23 @@ body {
 
 /* line 6, ../scss/pages/_homepage.scss */
 section {
-  height: 700px;
-  max-height: 100vh;
+  padding: 50px 0;
 }
-/* line 9, ../scss/pages/_homepage.scss */
+/* line 8, ../scss/pages/_homepage.scss */
 section:not(:last-of-type) {
   margin-bottom: 40px;
-  border-bottom: 2px solid #777;
 }
-/* line 13, ../scss/pages/_homepage.scss */
+/* line 11, ../scss/pages/_homepage.scss */
 section:first-of-type {
   margin-top: 80px;
 }
-/* line 16, ../scss/pages/_homepage.scss */
+/* line 14, ../scss/pages/_homepage.scss */
 section .image-box {
   width: 50%;
   margin: auto;
   position: relative;
 }
-/* line 20, ../scss/pages/_homepage.scss */
+/* line 18, ../scss/pages/_homepage.scss */
 section .image-box img {
   opacity: 1;
   display: block;
@@ -38,7 +36,7 @@ section .image-box img {
   transition: .5s ease;
   backface-visibility: hidden;
 }
-/* line 28, ../scss/pages/_homepage.scss */
+/* line 26, ../scss/pages/_homepage.scss */
 section .image-box .overlay {
   transition: .5s ease;
   opacity: 0;
@@ -49,36 +47,29 @@ section .image-box .overlay {
   -ms-transform: translate(-50%, -50%);
   text-align: center;
 }
-/* line 39, ../scss/pages/_homepage.scss */
+/* line 37, ../scss/pages/_homepage.scss */
 section .image-box:hover .image {
   opacity: 0.3;
 }
-/* line 42, ../scss/pages/_homepage.scss */
+/* line 40, ../scss/pages/_homepage.scss */
 section .image-box:hover .overlay {
   opacity: 1;
 }
 
-/* line 56, ../scss/pages/_homepage.scss */
+/* line 54, ../scss/pages/_homepage.scss */
 .svg {
   width: 100px;
   padding: 50px;
 }
 
-/* line 61, ../scss/pages/_homepage.scss */
+/* line 59, ../scss/pages/_homepage.scss */
 .icons a {
   padding-left: 15px;
   font-size: medium;
   color: #777;
 }
 
-/* line 66, ../scss/pages/_homepage.scss */
+/* line 64, ../scss/pages/_homepage.scss */
 .icons a:hover {
   color: #fff;
-}
-.profile{
-  border-radius: 50%;
-  width: 150px;
-  display: inline;
-  float: left;
-  margin-right: 30px;
 }

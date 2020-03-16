@@ -13,4 +13,8 @@ $(document).ready(function () {
     images.map(e => {
         $("section.last-sec").before(e.template);
     })
+    // contributers hover effect
+    $('.special.cards .image').dimmer({
+        on: 'hover'
+    });
 });
