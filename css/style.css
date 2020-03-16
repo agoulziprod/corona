@@ -57,3 +57,21 @@ section .image-box:hover .image {
 section .image-box:hover .overlay {
   opacity: 1;
 }
+
+/* line 56, ../scss/pages/_homepage.scss */
+.svg {
+  width: 100px;
+  padding: 50px;
+}
+
+/* line 61, ../scss/pages/_homepage.scss */
+.icons a {
+  padding-left: 15px;
+  font-size: medium;
+  color: #777;
+}
+
+/* line 66, ../scss/pages/_homepage.scss */
+.icons a:hover {
+  color: #fff;
+}
