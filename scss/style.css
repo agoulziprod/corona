@@ -93,7 +93,7 @@ section .flex .image-box:hover .overlay {
 }
 
 .profile {
-  border-radius: 50% !important;
+  border-radius: 50%;
 }
 
 .contribute {

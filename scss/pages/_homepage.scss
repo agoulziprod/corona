@@ -1,5 +1,4 @@
 body{
-    height: 500vh;
     color: $grayColor;
 }
 // Start sections
@@ -80,4 +79,11 @@ section{
 
     .image {
         margin: 10px;
+    }
+    .profile{
+        border-radius: 50% !important;
+    }
+
+    .contribute{
+        background-color: grey;
     }

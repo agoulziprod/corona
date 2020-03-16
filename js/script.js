@@ -40,9 +40,9 @@ for (const iterator of images) {
         content += `<div class="image-box">
                         <img class="ui image rounded" src="/images/${photo.path}" alt="${photo.alt}">
                         <div class="overlay">
-                            <button class="ui huge primary button">
-                                Download Now!
-                            </button>
+                            <a class="ui huge primary button" href="/images/${photo.path}" download type="submit">
+                            <i class="icon download" ></i> Download!
+                            </a>
                         </div>
                     </div>`
     }
