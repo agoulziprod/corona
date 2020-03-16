@@ -9,6 +9,13 @@ let contributers = [
         Link: 'ima 3amr olla khawi'
     },
 ]
+
+
+
+$('.ui.dropdown')
+  .dropdown()
+    ;
+
 $(document).ready(function () {
     $("header .menu.fixed .scrollToImages .menu a").click(function (event) {
         event.preventDefault();
