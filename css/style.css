@@ -104,4 +104,13 @@ section .flex .image-box:hover .overlay {
 .white-text {
   color: white !important;
 }
+
+.about {
+  background-color: #ffd29e;
+}
+
+.source {
+  background-color: #dadada;
+  color: white;
+}
 /*# sourceMappingURL=style.css.map */

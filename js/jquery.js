@@ -20,6 +20,15 @@ $(document).ready(function () {
         $("#lg").append(`<a class="item" data-scroll="${e.symbole}">${e.name}</a>`)
         // href="#${e.symbole}"
     })
+    contributers.forEach((e, idx, array)=>{
+        $("#contributers-list").append(
+            `
+            <a href="${e.Link}" target="blank">${e.name}</a>
+            `
+            )
+        if(idx != array.length - 1)
+        $("#contributers-list").append('<spane>, </spane>')
+    })
     
     // auto Sync of active class in navbar
     $(window).scroll(function () {

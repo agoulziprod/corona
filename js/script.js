@@ -54,11 +54,11 @@ for (const iterator of images) {
 let contributers = [
     {
         name: 'AGOULZI Mohamed',
-        Link: 'www.agoulzi.com'
+        Link: 'http://www.agoulzi.com/'
     },
     {
         name: 'OTHWSAVE',
-        Link: 'ina link bghiti ?'
+        Link: ''
     },
     {
         name: 'KHIZOU Hajar',
@@ -75,8 +75,7 @@ let contributers = [
     
 ]
         for (const c of contributers) {
-           
-        // contributers-list
+         
         }
 
 
