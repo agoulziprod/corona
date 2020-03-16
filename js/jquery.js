@@ -43,4 +43,6 @@ $(document).ready(function () {
     $("header .toc").click(function (){
         $('.ui.sidebar').sidebar('toggle')
     })
+    // lazyload
+    lazyload();
 });

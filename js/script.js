@@ -38,7 +38,7 @@ for (const iterator of images) {
     let content = ""
     for (const photo of iterator.photos) {
         content += `<div class="image-box">
-                        <img class="ui image rounded" src="/images/${photo.path}" alt="${photo.alt}">
+                        <img class="ui image rounded lazyload" data-src="/images/${photo.path}" alt="${photo.alt}">
                         <div class="overlay">
                             <a class="ui huge primary button" href="/images/${photo.path}" download type="submit">
                             <i class="icon download" ></i> Download!

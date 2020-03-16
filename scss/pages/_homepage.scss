@@ -21,7 +21,7 @@ section{
         .image-box{
             // max-width: 500px;
             max-width: 500px;
-            margin: 0 1%;
+            margin: 1% 1%;
             position: relative;
             flex-grow: 1;
             img{
@@ -106,9 +106,10 @@ section.cont{
         font-size: medium;
     }
 
-
-    .image {
-        margin: 10px;
+    .about{
+        .image {
+            margin: 10px;
+        }
     }
     .profile{
         border-radius: 50% !important;
@@ -125,7 +126,7 @@ section.cont{
     }
     .white-text{
         color: white !important;
-      }
+    }
 .about{
     background-color: rgb(255, 210, 158);
 }

@@ -49,7 +49,7 @@ section .flex {
 /* line 21, ../scss/pages/_homepage.scss */
 section .flex .image-box {
   max-width: 500px;
-  margin: 0 1%;
+  margin: 1% 1%;
   position: relative;
   flex-grow: 1;
 }
@@ -124,38 +124,38 @@ section.cont.contribute .ui.icons button:hover {
 }
 
 /* line 110, ../scss/pages/_homepage.scss */
-.image {
+.about .image {
   margin: 10px;
 }
 
-/* line 113, ../scss/pages/_homepage.scss */
+/* line 114, ../scss/pages/_homepage.scss */
 .profile {
   border-radius: 50% !important;
 }
 
-/* line 118, ../scss/pages/_homepage.scss */
+/* line 119, ../scss/pages/_homepage.scss */
 .contribute {
   background-color: #131313;
   color: white !important;
 }
 
-/* line 122, ../scss/pages/_homepage.scss */
+/* line 123, ../scss/pages/_homepage.scss */
 .contributers {
   background-color: #2e2e2e;
   color: white;
 }
 
-/* line 126, ../scss/pages/_homepage.scss */
+/* line 127, ../scss/pages/_homepage.scss */
 .white-text {
   color: white !important;
 }
 
-/* line 129, ../scss/pages/_homepage.scss */
+/* line 130, ../scss/pages/_homepage.scss */
 .about {
   background-color: #ffd29e;
 }
 
-/* line 132, ../scss/pages/_homepage.scss */
+/* line 133, ../scss/pages/_homepage.scss */
 .source {
   background-color: #dadada;
   color: white;
