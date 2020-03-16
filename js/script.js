@@ -1,6 +1,6 @@
 let images = [
     {
-    name: "العربية",
+    name: "Darija",
     symbole: "Ar",
     photos: 
         [
