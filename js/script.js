@@ -74,6 +74,9 @@ let contributers = [
     {
         name: 'OUREKOUCH Mounir',
         Link: ''
+    },   {
+        name: 'BIROUK Yassine',
+        Link: ''
     },
     
 ]
