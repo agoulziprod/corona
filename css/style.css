@@ -75,3 +75,10 @@ section .image-box:hover .overlay {
 .icons a:hover {
   color: #fff;
 }
+.profile{
+  border-radius: 50%;
+  width: 150px;
+  display: inline;
+  float: left;
+  margin-right: 30px;
+}
