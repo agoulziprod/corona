@@ -4,8 +4,7 @@ body{
 }
 // Start sections
 section{
-    height: 700px;
-    max-height: 100vh;
+    
     &:not(:last-of-type){
         margin-bottom: 40px;
         border-bottom: 2px solid $grayColor;
@@ -66,4 +65,7 @@ section{
   .icons a:hover{
    
     color: #fff;
+  }
+  .image{
+      margin: 10px;
   }
