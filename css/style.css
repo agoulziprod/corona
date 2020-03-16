@@ -43,3 +43,10 @@ section .overlay::after {
   font-weight: 900;
   display: none;
 }
+
+
+
+.svg{
+  width: 100px;
+  padding: 50px;
+}
