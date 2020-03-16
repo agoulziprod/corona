@@ -2,7 +2,21 @@
 header .fixed.menu {
   border-radius: 0;
 }
+/* line 5, ../scss/layout/_header.scss */
+header #mobile {
+  display: none;
+}
 
+@media only screen and (max-width: 767px) {
+  /* line 12, ../scss/layout/_header.scss */
+  header #mobile {
+    display: block;
+  }
+  /* line 15, ../scss/layout/_header.scss */
+  header .not-mobile {
+    display: none !important;
+  }
+}
 /* line 1, ../scss/pages/_homepage.scss */
 body {
   color: #777;
@@ -24,7 +38,7 @@ section:not(:last-of-type) {
 }
 /* line 14, ../scss/pages/_homepage.scss */
 section:first-of-type {
-  margin-top: 80px;
+  margin-top: 50px;
 }
 /* line 17, ../scss/pages/_homepage.scss */
 section .flex {

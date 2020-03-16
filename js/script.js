@@ -58,7 +58,7 @@ let contributers = [
     },
     {
         name: 'OTHWSAVE',
-        Link: ''
+        Link: 'https://www.linkedin.com/in/othwsav'
     },
     {
         name: 'KHIZOU Hajar',

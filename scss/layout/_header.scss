@@ -2,4 +2,21 @@ header{
     .fixed.menu{
         border-radius: 0;
     }
+    #mobile{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    header {
+        #mobile{
+            display: block;
+        }
+        .not-mobile{
+            display: none !important;
+        }
+    }
+    // section:first-of-type{
+    //     margin-top: 245px !important;
+    // }
 }

@@ -11,31 +11,60 @@
 </head>
 
 <body>
-    <!-- Start Header -->
-    <header>
-        <div class="ui huge fixed menu">
-            <div class="ui container">
-                <div class="ui dropdown scrollToImages item">
-                    Images <i class="dropdown icon"></i>
-                    <div class="menu" id="lg">
+    <!-- Start mobile side bar -->
+    <div class="ui sidebar vertical menu">
+        <div class="ui dropdown scrollToImages item">
+            Images <i class="dropdown icon"></i>
+            <div class="menu" id="lg">
 
-                    </div>
-                </div>
-                <a class="item link-to-go" data-scroll="source">
-                    Source (PDF & AI)
-                </a>
-                <a class="item link-to-go" data-scroll="about">
-                    About
-                </a>
-                <a class="item link-to-go" data-scroll="contribrs">
-                    Contributers
-                </a>
-                <a class="item link-to-go" data-scroll="contribute">
-                    Contribute
-                </a>
             </div>
         </div>
-    </header>
+        <a class="item link-to-go" data-scroll="source">
+            Source (PDF & AI)
+        </a>
+        <a class="item link-to-go" data-scroll="about">
+            About
+        </a>
+        <a class="item link-to-go" data-scroll="contribrs">
+            Contributers
+        </a>
+        <a class="item link-to-go" data-scroll="contribute">
+            Contribute
+        </a>
+    </div>
+    <!-- End mobile side bar -->
+    <div class="pusher">
+        <!-- Start Header -->
+        <header>
+
+            <div class="ui huge fixed menu">
+                <div class="ui container">
+                    <div class="ui dropdown scrollToImages item not-mobile">
+                        Images <i class="dropdown icon"></i>
+                        <div class="menu" id="lg">
+
+                        </div>
+                    </div>
+                    <a class="item link-to-go not-mobile" data-scroll="source">
+                        Source (PDF & AI)
+                    </a>
+                    <a class="item link-to-go not-mobile" data-scroll="about">
+                        About
+                    </a>
+                    <a class="item link-to-go not-mobile" data-scroll="contribrs">
+                        Contributers
+                    </a>
+                    <a class="item link-to-go not-mobile" data-scroll="contribute">
+                        Contribute
+                    </a>
+                    <div class="right menu" id="mobile">
+                        <a class="toc item">
+                            <i class="sidebar icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
     
         <section id="source" class="last-sec source">
             <div class="ui container">
@@ -98,54 +127,51 @@
                     </div>
                 </div>
             </div>
-    </section>
-    <!-- darker sections-->
-    <section id="contribrs" class="cont contributers white-text">
-        <div class="ui container">
+        </section>
+        <!-- darker sections-->
+        <section id="contribrs" class="cont contributers white-text">
+            <div class="ui container">
 
-            <h2 class="ui header white-text centered">Contributers</h2>
-            <p>
-                This is the list of people that helped me to create this content, so many thanks to you guys:
-            </p>
-               <div id="contributers-list"> 
-                  
-                </div>
+                <h2 class="ui header white-text centered">Contributers</h2>
+                <p>
+                    This is the list of people that helped me to create this content, so many thanks to you guys:
+                </p>
+                <div id="contributers-list"></div>
 
-            <div id="contributers-list"> 
-               
+                <div id="contributers-list"></div>
+
             </div>
-            
-            </div>
-        </div>
-    </section>
-    <section id="contribute" class="cont contribute">
-        <div class="ui container">
-            <h2 class="ui header white-text centered">Contribute</h2>
-            <p class="ui icons white-text">
-                You can help by making designs, translating content,
-                Feel free to contact me:
-            </p>
-            <div class="ui icons">
-                <a href="https://www.instagram.com/agoulziprod/" class="white-text"  target="_blank">
-                    
+        </section>
+        <section id="contribute" class="cont contribute">
+            <div class="ui container">
+                <h2 class="ui header white-text centered">Contribute</h2>
+                <p class="ui icons white-text">
+                    You can help by making designs, translating content,
+                    Feel free to contact me:
+                </p>
+                <div class="ui icons">
+                    <a href="https://www.instagram.com/agoulziprod/" class="white-text" target="_blank">
+
                         <i class="instagram icon"></i>
-                </a>
-                <a target="_blank" class="white-text" href="https://www.facebook.com/agoulziprod/">
+                    </a>
+                    <a target="_blank" class="white-text" href="https://www.facebook.com/agoulziprod/">
                         <i class="facebook icon"></i>
-                </a>
-                <a target="_blank" class="white-text" href="https://www.youtube.com/channel/UC3KZfYHqufKyWvDyKq8kqWA">
+                    </a>
+                    <a target="_blank" class="white-text"
+                        href="https://www.youtube.com/channel/UC3KZfYHqufKyWvDyKq8kqWA">
                         <i class="youtube icon"></i>
-                </a>
-                <a target="_blank" class="white-text"  href="http://linkedin.com/in/agoulziprod">
+                    </a>
+                    <a target="_blank" class="white-text" href="http://linkedin.com/in/agoulziprod">
                         <i class="linkedin icon"></i>
-                </a>
-                <a target="_blank" class="white-text"  href="http://github.com/agoulziprod">
+                    </a>
+                    <a target="_blank" class="white-text" href="http://github.com/agoulziprod">
                         <i class="github icon"></i>
-                </a>
+                    </a>
+                </div>
             </div>
-        </div>
-    </section>
-    
+        </section>
+
+    </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
