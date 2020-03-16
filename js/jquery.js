@@ -12,5 +12,7 @@ $(document).ready(function () {
     // appending images object
     images.map(e => {
         $("section.last-sec").before(e.template);
+        $("#lg").append(`<a class="item" data-scroll="#${e.symbole}" href="#${e.symbole}">${e.name}</a>`)
     })
+
 });

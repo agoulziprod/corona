@@ -28,6 +28,7 @@ let images = [
             ]
 },
 ];
+
 for (const iterator of images) {
     iterator.template = `<section class="ui section" id="${iterator.symbole}">
                             <div class="ui container">
@@ -36,7 +37,7 @@ for (const iterator of images) {
     let content = ""
     for (const photo of iterator.photos) {
         content += `<div class="image-box">
-                        <img class="ui image rounded" src="${photo.path}" alt="${photo.alt}">
+                        <img class="ui image rounded" src="/images/${photo.path}" alt="${photo.alt}">
                         <div class="overlay">
                             <button class="ui huge primary button">
                                 Download image
@@ -45,7 +46,12 @@ for (const iterator of images) {
                     </div>`
     }
     iterator.template += content + `</div></section>`
-    console.log(iterator.template)
+   
+}
+
+for (const lg of images) {
+   
+   
 }
 
 let contributers = [
