@@ -18,42 +18,42 @@ header #mobile {
   }
 }
 /* line 1, ../scss/pages/_homepage.scss */
-body {
-  color: #777;
+body, *:not(i) {
+  font-family: 'Sen', sans-serif !important;
 }
 
-/* line 4, ../scss/pages/_homepage.scss */
+/* line 5, ../scss/pages/_homepage.scss */
 ul, ol {
   list-style: none;
   padding: 0;
 }
 
-/* line 9, ../scss/pages/_homepage.scss */
+/* line 10, ../scss/pages/_homepage.scss */
 section {
   padding: 50px 0;
 }
-/* line 11, ../scss/pages/_homepage.scss */
+/* line 12, ../scss/pages/_homepage.scss */
 section:not(:last-of-type) {
   padding-bottom: 40px;
 }
-/* line 14, ../scss/pages/_homepage.scss */
+/* line 15, ../scss/pages/_homepage.scss */
 section:first-of-type {
   margin-top: 50px;
 }
-/* line 17, ../scss/pages/_homepage.scss */
+/* line 18, ../scss/pages/_homepage.scss */
 section .flex {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-/* line 21, ../scss/pages/_homepage.scss */
+/* line 22, ../scss/pages/_homepage.scss */
 section .flex .image-box {
   max-width: 500px;
   margin: 1% 1%;
   position: relative;
   flex-grow: 1;
 }
-/* line 27, ../scss/pages/_homepage.scss */
+/* line 28, ../scss/pages/_homepage.scss */
 section .flex .image-box img {
   opacity: 1;
   display: block;
@@ -62,7 +62,7 @@ section .flex .image-box img {
   transition: .5s ease;
   backface-visibility: hidden;
 }
-/* line 35, ../scss/pages/_homepage.scss */
+/* line 36, ../scss/pages/_homepage.scss */
 section .flex .image-box .overlay {
   transition: .5s ease;
   opacity: 0;
@@ -73,90 +73,105 @@ section .flex .image-box .overlay {
   -ms-transform: translate(-50%, -50%);
   text-align: center;
 }
-/* line 46, ../scss/pages/_homepage.scss */
+/* line 47, ../scss/pages/_homepage.scss */
 section .flex .image-box:hover .image {
   opacity: 0.3;
 }
-/* line 49, ../scss/pages/_homepage.scss */
+/* line 50, ../scss/pages/_homepage.scss */
 section .flex .image-box:hover .overlay {
   opacity: 1;
 }
 
-/* line 59, ../scss/pages/_homepage.scss */
+/* line 60, ../scss/pages/_homepage.scss */
 section.source .cards .card {
   min-width: 260px;
 }
 
-/* line 65, ../scss/pages/_homepage.scss */
+/* line 66, ../scss/pages/_homepage.scss */
 section.cont {
   font-size: 16px;
   font-weight: 300;
   text-align: center;
 }
-/* line 71, ../scss/pages/_homepage.scss */
+/* line 72, ../scss/pages/_homepage.scss */
 section.cont.contributers ul li {
   margin: 5px 0;
 }
-/* line 78, ../scss/pages/_homepage.scss */
+/* line 79, ../scss/pages/_homepage.scss */
 section.cont.contribute .ui.icons button {
   transition: all .5s;
 }
-/* line 80, ../scss/pages/_homepage.scss */
+/* line 81, ../scss/pages/_homepage.scss */
 section.cont.contribute .ui.icons button.github {
   color: white;
   background-color: #24292e;
 }
-/* line 84, ../scss/pages/_homepage.scss */
+/* line 85, ../scss/pages/_homepage.scss */
 section.cont.contribute .ui.icons button:hover {
   transform: scale(1.09);
 }
 
-/* line 99, ../scss/pages/_homepage.scss */
+/* line 100, ../scss/pages/_homepage.scss */
 .svg {
   width: 100px;
   padding: 50px;
 }
 
-/* line 104, ../scss/pages/_homepage.scss */
+/* line 105, ../scss/pages/_homepage.scss */
 .icons a {
   padding-left: 15px;
   font-size: medium;
 }
 
-/* line 110, ../scss/pages/_homepage.scss */
+/* line 111, ../scss/pages/_homepage.scss */
 .about .image {
   margin: 10px;
 }
+/* line 116, ../scss/pages/_homepage.scss */
+.about .content .description p {
+  font-size: 16px;
+  font-weight: 500;
+}
 
-/* line 114, ../scss/pages/_homepage.scss */
+/* line 123, ../scss/pages/_homepage.scss */
 .profile {
   border-radius: 50% !important;
 }
 
-/* line 119, ../scss/pages/_homepage.scss */
+/* line 128, ../scss/pages/_homepage.scss */
 .contribute {
   background-color: #131313;
   color: white !important;
 }
 
-/* line 123, ../scss/pages/_homepage.scss */
+/* line 132, ../scss/pages/_homepage.scss */
 .contributers {
   background-color: #2e2e2e;
   color: white;
 }
 
-/* line 127, ../scss/pages/_homepage.scss */
+/* line 136, ../scss/pages/_homepage.scss */
 .white-text {
   color: white !important;
 }
 
-/* line 130, ../scss/pages/_homepage.scss */
+/* line 139, ../scss/pages/_homepage.scss */
 .about {
   background-color: #ffd29e;
 }
 
-/* line 133, ../scss/pages/_homepage.scss */
+/* line 142, ../scss/pages/_homepage.scss */
 .source {
   background-color: #dadada;
   color: white;
+}
+
+/* line 148, ../scss/pages/_homepage.scss */
+button#scrollToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+  box-shadow: 0px 0px 15px 0px #000000a8;
+  display: none;
 }

@@ -1,5 +1,6 @@
-body{
-    color: $grayColor;
+body, *:not(i){
+    // color: $grayColor;
+    font-family: 'Sen', sans-serif !important; 
 }
 ul,ol{
     list-style: none;
@@ -110,6 +111,14 @@ section.cont{
         .image {
             margin: 10px;
         }
+        .content{
+            .description{
+                p{
+                    font-size: 16px;
+                    font-weight: 500;
+                }
+            }
+        }
     }
     .profile{
         border-radius: 50% !important;
@@ -134,4 +143,13 @@ section.cont{
 
     background-color: rgb(218, 218, 218);
     color: white;
+}
+// scroll to top button
+button#scrollToTop{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+    box-shadow: 0px 0px 15px 0px #000000a8;
+    display: none;
 }
