@@ -1,6 +1,6 @@
 let images = [
     {
-    name: "Moroccan Darija",
+    name: "Darija lmaghribiya",
     symbole: "Dr",
     photos: 
         [
@@ -9,7 +9,7 @@ let images = [
         ]
 },
     {
-    name: "English",
+    name: "lenglais",
     symbole: "En",
     photos: [
         { path: "En.png", alt: 'stay distant, stay safe' }
@@ -17,7 +17,7 @@ let images = [
     ]
 },
     {
-        name: "Tamazight",
+        name: "Chal7a lmaghribiya",
         symbole: "Ta",
         photos: 
             [
@@ -45,7 +45,7 @@ for (const iterator of images) {
                         <img class="ui image rounded lazyload" data-src="/images/${photo.path}" alt="${photo.alt}">
                         <div class="overlay">
                             <a class="ui huge primary button" href="/images/${photo.path}" download type="submit">
-                            <i class="icon download" ></i> Download!
+                            <i class="icon download" ></i> Tilicharji!
                             </a>
                         </div>
                     </div>`
@@ -80,7 +80,7 @@ let contributers = [
         Link: ''
     },   {
         name: 'BIROUK Yassine',
-        Link: 'biroukyass.github.io'
+        Link: ''
     },
     
 ]

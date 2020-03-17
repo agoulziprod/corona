@@ -1,0 +1,15 @@
+/* This file is not from sass files and it's sepecific for rtl direction html files */
+
+/* .ui.visible.right.sidebar ~ .fixed, .ui.visible.right.sidebar ~ .pusher {
+    -webkit-transform: none !important;
+    transform: none !important; 
+} */
+
+body, *:not(i){
+    font-family: 'Tajawal', sans-serif !important;
+}
+
+button#scrollToTop{
+    right: auto;
+    left: 20px;
+}

@@ -32,7 +32,7 @@ $(document).ready(function () {
             `
             )
         if(idx != array.length - 1)
-        $("#contributers-list").append('<spane>, </spane>')
+        $("#contributers-list").append('<span>, </span>')
     })
     
     // auto Sync of active class in navbar
@@ -51,4 +51,21 @@ $(document).ready(function () {
     })
     // lazyload
     lazyload();
+    // scroll To Top Button
+    let b = $('button#scrollToTop');
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > 700) {
+            if (b.is(":hidden")) {
+                b.fadeIn(100);
+            }
+        } else {
+            b.fadeOut(100);
+        }
+    });
+    b.click(function (event) {
+        event.preventDefault();
+        $('html').animate({
+            scrollTop: 0
+        }, 1000);
+    });
 });
