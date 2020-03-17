@@ -45,7 +45,7 @@ for (const iterator of images) {
                         <img class="ui image rounded lazyload" data-src="/images/${photo.path}" alt="${photo.alt}">
                         <div class="overlay">
                             <a class="ui huge primary button" href="/images/${photo.path}" download type="submit">
-                            تحميل! <i class="icon download" ></i>
+                            <i class="icon download"></i> تحميل! 
                             </a>
                         </div>
                     </div>`

@@ -48,7 +48,24 @@ $(document).ready(function () {
     // sidebar
     $("header .toc").click(function (){
         $('.ui.sidebar').sidebar('toggle')
+        // this part is for fixing arabic page's sidebar bug : Start 1
+        if(location.href.includes("index-ar.html")){
+            $("div#arabicPageFixer").animate({
+                color: "white"
+            }, 100, function(){
+                $(".ui.sidebar.vertical.menu.uncover").removeClass("left").addClass("right")
+            })
+        }
+        // this part is for fixing arabic page's sidebar bug : End 1
     })
+    // this part is for fixing arabic page's sidebar bug : Start 2
+    if(location.href.includes("index-ar.html")){
+        $(".pusher").on("click", function(){
+            if($(this).hasClass("dimmed"))
+                $(".ui.sidebar.vertical.menu").removeClass("right").addClass("left")
+        })
+    }
+    // this part is for fixing arabic page's sidebar bug : End 2
     // lazyload
     lazyload();
     // scroll To Top Button

@@ -127,46 +127,50 @@ section.cont.contribute .ui.icons button:hover {
 .about .image {
   margin: 10px;
 }
-/* line 116, ../scss/pages/_homepage.scss */
+/* line 114, ../scss/pages/_homepage.scss */
+.about .content {
+  padding-right: 1.5em !important;
+}
+/* line 117, ../scss/pages/_homepage.scss */
 .about .content .description p {
   font-size: 16px;
   font-weight: 500;
 }
 
-/* line 123, ../scss/pages/_homepage.scss */
+/* line 124, ../scss/pages/_homepage.scss */
 .profile {
   border-radius: 50% !important;
 }
 
-/* line 128, ../scss/pages/_homepage.scss */
+/* line 129, ../scss/pages/_homepage.scss */
 .contribute {
   background-color: #131313;
   color: white !important;
 }
 
-/* line 132, ../scss/pages/_homepage.scss */
+/* line 133, ../scss/pages/_homepage.scss */
 .contributers {
   background-color: #2e2e2e;
   color: white;
 }
 
-/* line 136, ../scss/pages/_homepage.scss */
+/* line 137, ../scss/pages/_homepage.scss */
 .white-text {
   color: white !important;
 }
 
-/* line 139, ../scss/pages/_homepage.scss */
+/* line 140, ../scss/pages/_homepage.scss */
 .about {
   background-color: #ffd29e;
 }
 
-/* line 142, ../scss/pages/_homepage.scss */
+/* line 143, ../scss/pages/_homepage.scss */
 .source {
   background-color: #dadada;
   color: white;
 }
 
-/* line 148, ../scss/pages/_homepage.scss */
+/* line 149, ../scss/pages/_homepage.scss */
 button#scrollToTop {
   position: fixed;
   bottom: 20px;
